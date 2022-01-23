@@ -9,6 +9,7 @@
 img {
   border-radius: 30%;
 }
+
 </style>
 <body>
 <h1>Production Projects</h1>
@@ -17,7 +18,36 @@ img {
 <p>This App helps students to save books issued from library and get notified when they reach last day to return
     book.</p>
 <p>This also shows the fine student have to pay to the library if they return book past due date</p>
-<a href="https://github.com/ankurjb/library" target="_blank">Github</a>
-<a href="https://play.google.com/store/apps/details?id=com.ankurjb.library" target="_blank">Play Store</a>
+<p>
+    <a href="https://github.com/ankurjb/library" target="_blank">Github</a>
+</p>
+<p>
+    <a href="https://play.google.com/store/apps/details?id=com.ankurjb.library" target="_blank">Play Store</a>
+</p>
+<h3>Dependencies</h3>
+<h4>
+    Activity-X
+</h4>
+<p>
+    <a href="https://developer.android.com/guide/fragments/create" target="_blank">Fragment Transaction</a><br>
+    def activity_version = "1.4.0"<br>
+    implementation "androidx.activity:activity-ktx:$activity_version"<br>
+    implementation "androidx.fragment:fragment-ktx:$activity_version"<br>
+</p>
+<h4>
+    Dagger
+</h4>
+<p>
+    <a href="https://dagger.dev/dev-guide/" target="_blank">Dagger Docs</a><br>
+    <a href="https://github.com/google/dagger" target="_blank">Dagger Github</a><br>
+    def dagger = "2.40.5"<br>
+    implementation("com.google.dagger:dagger:$dagger")<br>
+    kapt("com.google.dagger:dagger-compiler:$dagger")<br>
+    <br>
+    implementation("com.google.dagger:dagger-android:$dagger")<br>
+    implementation("com.google.dagger:dagger-android-support:$dagger")<br>
+    annotationProcessor("com.google.dagger:dagger-android-processor:$dagger")<br>
+    kapt("com.google.dagger:dagger-android-processor:$dagger")<br>
+</p>
 </body>
 </html>
